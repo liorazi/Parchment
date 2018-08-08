@@ -186,6 +186,18 @@ open class PagingViewController<T: PagingItem>:
     set { options.selectedTextColor = newValue }
   }
 
+  /// The text color for the currently selected menu item.
+  public var selectedRoundedBackgroundColor: UIColor {
+	get { return options.selectedRoundedBackgroundColor }
+	set { options.selectedRoundedBackgroundColor = newValue }
+  }
+
+  /// The color that will indicate today date
+  public var todayColor: UIColor {
+	get { return options.todayColor }
+	set { options.todayColor = newValue }
+  }
+
   /// The background color for the menu items.
   public var backgroundColor: UIColor {
     get { return options.backgroundColor }

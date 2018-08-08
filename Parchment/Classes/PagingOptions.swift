@@ -24,7 +24,9 @@ public class PagingOptions {
   public var menuBackgroundColor: UIColor
   public var borderColor: UIColor
   public var indicatorColor: UIColor
-  
+  public var todayColor: UIColor
+  public var selectedRoundedBackgroundColor: UIColor
+
   public var scrollPosition: UICollectionViewScrollPosition {
     switch selectedScrollPosition {
     case .left:
@@ -84,6 +86,8 @@ public class PagingOptions {
     
     textColor = UIColor.black
     selectedTextColor = UIColor(red: 3/255, green: 125/255, blue: 233/255, alpha: 1)
+	todayColor = UIColor.red
+	selectedRoundedBackgroundColor = UIColor.white
     backgroundColor = .clear
     selectedBackgroundColor = .clear
     menuBackgroundColor = UIColor.white
